@@ -2,6 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+//port form machine and heroku heroku
+const port = process.env.PORT || 3000;
 var app = express();
 
 //registerPartials advance templating used for include 
@@ -77,6 +79,6 @@ app.get('/api', (request, response) => {
 
 
 //start up or listen the app in server
-app.listen(3000, () => {
-	console.log('Server is up port 300');
+app.listen(port, () => {
+	console.log(`Server is up port ${3000}`);
 });
