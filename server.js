@@ -86,5 +86,5 @@ app.get('/api', (request, response) => {
 
 //start up or listen the app in server
 app.listen(port, () => {
-	console.log(`Server is up port ${3000}`);
+	console.log(`Server is up port ${port}`);
 });
